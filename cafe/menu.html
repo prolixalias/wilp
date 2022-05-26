@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <section>
+  </section>
+
+  <script>
+    function hereDoc(f) {
+      return f.toString().
+        replace(/^[^\/]+\/\*!?/, '').
+        replace(/\*\/[^\/]+$/, '');
+    }
+
+    function populate(location) {
+      switch(location) {
+        case "breakfast":
+          var data = hereDoc(function() {/*!
+            [ "Breakfast",
+              {
+                "name": "Chicken & Waffles",
+                "display": true,
+                "description": "fried chicken, Belgian waffle, jalapeño maple honey, hot sauce",
+                "options": [],
+                "dollars": [
+                  "11"
+                ],
+                "attention": true,
+                "eightysix": false
+              },
+              {
+                "name": "Parfait",
+                "display": false,
+                "description": "vanilla yogurt, blueberries, strawberries, granola",
+                "options": [],
+                "dollars": [
+                  "4"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack 1",
+                "display": true,
+                "description": "egg, cheese, bacon",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack 2",
+                "display": false,
+                "description": "egg, cheese, sausage",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack 3",
+                "display": false,
+                "description": "egg, cheese, steak",
+                "options": [],
+                "dollars": [
+                  "7"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack 4",
+                "display": false,
+                "description": "mushroom, sweet potato, spinach",
+                "options": [],
+                "dollars": [
+                  "5"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack - consolidated",
+                "display": true,
+                "description": "",
+                "options": ["egg, cheese, bacon", "egg, cheese, sausage", "egg, cheese, steak", "mushroom, sweet potato, spinach"],
+                "dollars": [
+                  "6"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "McMack - priced options",
+                "display": true,
+                "description": "",
+                "options": ["egg, cheese, bacon", "egg, cheese, sausage", "egg, cheese, steak", "mushroom, sweet potato, spinach"],
+                "dollars": [
+                  "6", "6", "7", "5"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "New Item",
+                "display": false,
+                "description": "a fine description",
+                "options": [],
+                "dollars": [
+                  "231"
+                ],
+                "attention": false,
+                "eightysix": false
+              }
+            ]
+          */});
+          break;
+        case "lunch":
+          var data = hereDoc(function() {/*!
+            [ "Lunch",
+              {
+                "name": "Wings",
+                "display": true,
+                "description": "smoked and tossed in buffalo sauce, house-made bleu cheese",
+                "options": [],
+                "dollars": [
+                  "14"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "Chopped Greek Salad",
+                "display": true,
+                "description": "romaine, cucumber, red onion, pepperoncini, kalamata olives, tomatoes, feta, pickled beets, feta vinaigrette",
+                "options": [],
+                "dollars": [
+                  "7"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              { 
+                "name": "Caesar Salad",
+                "display": true,
+                "description": "romaine, parmesan, croutons, Caesar dressing",
+                "options": [],
+                "dollars": [
+                  "7"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "The Burger",
+                "display": true,
+                "description": "2 3-oz patties, American cheese, lettuce, pickle, burger sauce, brioche bun",
+                "options": [],
+                "dollars": [
+                  "13"
+                ],
+                "attention": true,
+                "eightysix": false
+              },
+              {
+                "name": "Grilled Cheese w/ Tomato Bisque",
+                "display": true,
+                "description": "havarti, munster, apple chutney, sourdough bread",
+                "options": [],
+                "dollars": [
+                  "10"
+                ],
+                "attention": false,
+                "eightysix": true
+              },
+              {
+                "name": "Banh Mi",
+                "display": true,
+                "description": "curry hummus, carrot, onion, cabbage, French baguette",
+                "options": [],
+                "dollars": [
+                  "9"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "Italian Hero",
+                "display": true,
+                "description": "salami, prosciutto, mortadella, provolone, mozzarella, French baguette",
+                "options": [],
+                "dollars": [
+                  "12"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "Fried Chicken Sandwich",
+                "display": true,
+                "description": "house-made fried chicken, spicy aioli, pickles, brioche bun",
+                "options": [],
+                "dollars": [
+                  "10"
+                ],
+                "attention": false,
+                "eightysix": false
+              },
+              {
+                "name": "New Item",
+                "display": false,
+                "description": "a fine description",
+                "options": [],
+                "dollars": [
+                  "231"
+                ],
+                "attention": false,
+                "eightysix": false
+              }
+            ]
+          */});
+          break;
+        case "sides":
+          var data = hereDoc(function() {/*!
+            [ "Sides",
+              {
+                "name": "Add chicken to salad",
+                "display": true,
+                "description": "",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "Add salmon to salad",
+                "display": true,
+                "description": "",
+                "options": [],
+                "dollars": [
+                  "9"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "Add skinny fries",
+                "display": true,
+                "description": "",
+                "options": [],
+                "dollars": [
+                  "2"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "A side of beef",
+                "display": false,
+                "description": "a fine description",
+                "options": [],
+                "dollars": [
+                  "231"
+                ],
+                "eightysix": false
+              }
+            ]
+          */});
+          break;
+        case "soup":
+          var data = hereDoc(function() {/*!
+            [ "Soups",
+              {
+                "name": "Tomato Bisque",
+                "display": true,
+                "description": "velvety tomato soup with fresh herbs",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "eightysix": true
+              },
+              {
+                "name": "Potato Leek",
+                "display": false,
+                "description": "a fine description",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "Roasted Butternut Squash",
+                "display": true,
+                "description": "the classic with brown butter, sage, nutmeg and crème fraîche",
+                "options": [],
+                "dollars": [
+                  "6"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "Northern Michigan Cioppino",
+                "display": true,
+                "description": "savory tomato-based seafood stew",
+                "options": [],
+                "dollars": [
+                  "17"
+                ],
+                "eightysix": false
+              },
+              {
+                "name": "Borscht",
+                "display": false,
+                "description": "a fine description",
+                "options": [],
+                "dollars": [
+                  "231"
+                ],
+                "eightysix": false
+              }
+            ]
+          */});
+          break;          
+        default:
+          break;
+      } 
+
+      const items = JSON.parse(data);
+
+      populateHeader(items);
+      populateItems(items);
+
+    }
+
+    function populateHeader(obj) {
+      const header = document.querySelector('header');
+      const myH1 = document.createElement('h1');
+      myH1.textContent = obj[0];
+      header.appendChild(myH1);
+    }
+
+    function populateItems(obj) {
+      const section = document.querySelector('section');
+      const items = obj;
+
+      for (var item of items) {
+        const myArticle = document.createElement('article');
+        const myItem = document.createElement('h2');
+        const myPara1 = document.createElement('p');
+        // const myPara2 = document.createElement('p');
+        // const myPara3 = document.createElement('p');
+        const myList = document.createElement('ul');
+        var pricedOptions = false;
+        var optionCounter = 0;
+
+        if (item.display) {
+          if (item.attention) {
+            myArticle.className = 'attention';
+          }
+          console.log("item.dollars: " + item.dollars);
+          const dollars = item.dollars;
+          console.log("dollars: " + dollars);
+          console.log("dollars length: " + dollars.length);
+          if (dollars.length > 1) { 
+            myItem.textContent = item.name;
+            var pricedOptions = true;
+          } else {
+            myItem.textContent = item.name + "\xa0\xa0\xa0\$\xa0" + item.dollars;
+          }
+          if (item.eightysix) {
+            myItem.className = 'soldout';
+          }
+          const description = item.description
+          if (description.length > 0) {
+            myPara1.textContent = item.description;
+          }
+          const options = item.options;
+          if (options.length > 0) {
+            // optionCounter = 0;
+            for (var option of options) {
+              const listItem = document.createElement('li');
+              if (pricedOptions) {
+                listItem.textContent = option + "\xa0\xa0\xa0\$\xa0" + item.dollars[optionCounter];
+                optionCounter++;
+              } else {
+                listItem.textContent = option;
+              }
+              myList.appendChild(listItem);
+            }
+          }
+          myArticle.appendChild(myItem);
+          if (description.length > 0) {
+            myArticle.appendChild(myPara1);
+          }
+          if (options.length > 0) {
+            myArticle.appendChild(myList);
+          }
+          section.appendChild(myArticle);
+        }
+      }
+    }
+
+    const locationSearch = location.search; 
+    const locationSearchText = locationSearch.substring(locationSearch.indexOf("?")+1);
+    console.log("search: " + locationSearchText);
+    populate(locationSearchText);
+
+  </script>
+</body>
+
+</html>

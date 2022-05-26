@@ -1,0 +1,104 @@
+/* general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+  
+body {
+  width: 580px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p, ul {
+  font-family: 'Quicksand';
+  color: whitesmoke;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* section styles */
+
+section article {
+  width: 93%;
+  float: none;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 2.5px;
+  margin-right: 12px;
+  margin-bottom: 2.5px;
+  margin-left: 12px;
+  padding-top: 6px;
+  padding-right: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+}
+
+section p {
+  margin-top: 1px;
+  margin-right: 10px;
+  margin-bottom: 2.5px;
+  margin-left: 10px;
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  font-size: 1.125rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+section ul {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.125rem;
+  font-weight: normal;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 2.5px;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  text-decoration: none;
+}
+
+.attention {
+  border: 2px solid red;
+}
+
+.soldout {
+  text-decoration: line-through;
+  text-decoration-thickness: 15%;
+}
+
+/* hackathon styles */
+
+@-moz-document url-prefix() {
+  html h1, h2, h3, p, ul {
+    color: black;
+  }
+}
