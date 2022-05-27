@@ -1,8 +1,10 @@
 # wilp
 
 ## cafe
-http://fullfrontalingenuity.com/wilp/cafe/breakfast.html
+http://fullfrontalingenuity.com/wilp/cafe/menu?breakfast
 
-http://fullfrontalingenuity.com/wilp/cafe/lunch.html
+http://fullfrontalingenuity.com/wilp/cafe/menu?lunch
 
-http://fullfrontalingenuity.com/wilp/cafe/soup.html
+http://fullfrontalingenuity.com/wilp/cafe/menu?sides
+
+http://fullfrontalingenuity.com/wilp/cafe/menu?soup

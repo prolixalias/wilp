@@ -354,6 +354,7 @@
       const header = document.querySelector('header');
       const myH1 = document.createElement('h1');
       myH1.textContent = obj[0];
+      console.log("found heading: " + myH1.textContent);
       header.appendChild(myH1);
     }
 
@@ -372,36 +373,43 @@
         var optionCounter = 0;
 
         if (item.display) {
+          console.log("found item to display: " + item.name);
           if (item.attention) {
             myArticle.className = 'attention';
+            console.log(item.name + ": attention");
           }
-          console.log("item.dollars: " + item.dollars);
+          console.log(item.name + ": item.dollars: " + item.dollars);
           const dollars = item.dollars;
-          console.log("dollars: " + dollars);
-          console.log("dollars length: " + dollars.length);
+          console.log(item.name + ": dollars: " + dollars);
+          console.log(item.name + ": dollars length: " + dollars.length);
           if (dollars.length > 1) { 
             myItem.textContent = item.name;
             var pricedOptions = true;
+            console.log(item.name + ": individually priced options");
           } else {
             myItem.textContent = item.name + "\xa0\xa0\xa0\$\xa0" + item.dollars;
+            console.log(item.name + ": " + item.dollars);
           }
           if (item.eightysix) {
             myItem.className = 'soldout';
+            console.log(item.name + ": 86'd");
           }
           const description = item.description
           if (description.length > 0) {
             myPara1.textContent = item.description;
+            console.log(item.name + ": " + item.description);
           }
           const options = item.options;
           if (options.length > 0) {
-            // optionCounter = 0;
             for (var option of options) {
               const listItem = document.createElement('li');
               if (pricedOptions) {
                 listItem.textContent = option + "\xa0\xa0\xa0\$\xa0" + item.dollars[optionCounter];
+                console.log(item.name + ": option " + optionCounter + " - " + option + " " + item.dollars[optionCounter]);
                 optionCounter++;
               } else {
                 listItem.textContent = option;
+                console.log(item.name + ": option " + option);
               }
               myList.appendChild(listItem);
             }
